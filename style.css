@@ -1,0 +1,24 @@
+style = ttk.Style()
+
+# Button Styling
+style.configure("TButton",
+                background="#4CAF50",
+                font=("Arial", 14),
+                padding=(10, 5),
+                relief="raised")
+
+style.map("TButton", 
+          foreground=[("active", "#ffffff")], 
+          background=[("active", "#45a049")])
+
+# Label Styling
+style.configure("TLabel",
+                font=("Arial", 14, "bold"),
+                background="#f0f0f0",
+                foreground="#333")
+
+# Entry Field Styling
+style.configure("TEntry",
+                font=("Arial", 12),
+                padding=(5, 5),
+                relief="solid")
